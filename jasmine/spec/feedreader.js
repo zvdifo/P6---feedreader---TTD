@@ -86,14 +86,22 @@ $(function() {
          * Remember, loadFeed() is asynchronous so this test wil require
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
+
+         //use beforeEach and done function because loadFeed() is asynchronous .
          beforeEach(function(done) {
             loadFeed(1,done);        
          });
 
-         it('have entry element when the loadFeed function is done', function(done){
+         it('have entry element when the loadFeed function is done', function(done) {
             expect($('.feed').find('.entry')).toBeDefined();
             done();
          });
+
+
+        //use afterEach to set back to the iniatial statement, avoiding errors.
+         afterEach(function (done) {
+            loadFeed(0, done);
+        });
     });
 
     /* TODO: Write a new test suite named "New Feed Selection"*/
@@ -103,13 +111,26 @@ $(function() {
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+
+         // set currentFeed outside, for further comparing.
+         var currentFeed;
+
          beforeEach(function(done) {
+            //get the current content of feed.
+            currentFeed = $('.feed').html();
             loadFeed(1,done);        
          });
-         it('content actually changes when a new feed loads', function(done){
-            expect().toBeDefined();
+
+         it('content actually changes when a new feed loads', function(done) {
+            //get the refreshed content of feed,then comparing it with the initial one.
+            var refreshedFeed = $('.feed').html();
+            expect(currentFeed).not.toBe(refreshedFeed);
             done();
          });
 
+         //use afterEach to set back to the iniatial statement, avoiding errors.
+         afterEach(function (done) {
+            loadFeed(0, done);
+        });
     });
 }());
