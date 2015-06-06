@@ -2,9 +2,10 @@
 
 In this project I wrote testing files for a web-based application that reads RSS feeds, Using jasmine(a Behavior-Driven JavaScript Documentation): http://jasmine.github.io/
 
-##instruction
-Check my program here:http://zvdifo.github.io/P6-TTD-FeedReader/
-Jasmine will run the 7 tests.
+##Instruction
+Check my program here:http://zvdifo.github.io/P6-TTD-FeedReader/<br>
+Jasmine will run the 7 tests.<br>
+
 ![alt tag](https://github.com/zvdifo/P6-TTD-FeedReader/blob/master/images/screen-shot.PNG)
 
 
