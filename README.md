@@ -2,17 +2,16 @@
 
 In this project I wrote testing files for a web-based application that reads RSS feeds, Using jasmine(a Behavior-Driven JavaScript Documentation): http://jasmine.github.io/
 
-
-## Why this Project?
-
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
-
+##instruction
+Check my program here:http://zvdifo.github.io/P6-TTD-FeedReader/
+Jasmine will run the 7 tests.
+![alt tag](https://github.com/zvdifo/P6-TTD-FeedReader/blob/master/images/screen-shot.PNG)
 
 
 ## How I completed this project?
 
 1. Download the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader).
-2. Review the functionality of the application within your browser.
+2. Review the functionality of the application within the browser.
 3. Explore the application's HTML (*./index.html*), CSS (*./css/style.css*) and JavaScript (*./js/app.js*) to gain an understanding of how it works.
 4. Explore the Jasmine spec file in *./jasmine/spec/feedreader.js*
 5. Edit the allFeeds variable in *./js/app.js* to make the provided test fail and see how Jasmine visualizes this failure in your application.
